@@ -1,0 +1,30 @@
+package Mqtt_test;
+
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.Consumer;
+
+
+
+public class ReceivemsgsFromAmqpQueue {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		ConnectionFactory factory = new ConnectionFactory();
+        factory.setHost("localhost");
+        Connection connection = factory.newConnection();
+        Channel channel = connection.createChannel();
+        channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
+        channel.queueDeclare("queue-1", false, false, false, null);
+        channel.queueBind("queue-1", EXCHANGE_NAME, "hi");
+        Consumer batchConsumer = new BatchConsumer().getBatchConsumer(channel, "queue-1");
+        channel.basicQos(5);
+        String consumerTag = channel.basicConsume("queue-1", false, batchConsumer);
+		channel.basicCancel(consumerTag);
+		channel.close();
+		connection.close();
+	}
+
+}

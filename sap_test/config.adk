@@ -1,0 +1,7 @@
+#Properties file
+#Fri Apr 01 13:03:41 IST 2022
+Adapter-Name=sap_test
+Adapter-Vendor=sap
+Adapter-Version=1.0.0
+Enable-Maven=true
+Adapter-ID=sap_test

@@ -1,0 +1,16 @@
+package Mqtt_test;
+
+import com.rabbitmq.client.ConnectionFactory;
+
+public class SendingmsgstoMqtt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		connectionFactory c = new ConnectionFactory();
+        connectionFactory.setHost(host);
+        conn = connectionFactory.newConnection();
+        ch = conn.createChannel();
+
+	}
+
+}

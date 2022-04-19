@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1648803280618
+Build-Jdk-Spec: 17
+Bundle-ManifestVersion: 2
+Bundle-Name: sap_test.sap_test
+Bundle-SymbolicName: sap_test
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin 5.1.4
+Export-Package: sap_test;uses:="org.apache.camel,org.apache.camel.impl,o
+ rg.apache.camel.spi";version="1.0.0"
+Import-Package: org.apache.camel,org.apache.camel.builder,org.apache.cam
+ el.impl,org.apache.camel.model,org.apache.camel.spi,org.slf4j
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=15))"
+Tool: Bnd-5.1.1.202006162103

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="batchconsume.BatchConsumer"/>
+    <fullyQualifiedTypeName name="com.rabbitmq.client.AMQP.Connection"/>
+    <fullyQualifiedTypeName name="com.rabbitmq.client.DeliverCallback"/>
+    <fullyQualifiedTypeName name="com.rabbitmq.client.ConnectionFactory"/>
+    <fullyQualifiedTypeName name="com.rabbitmq.client.Connection"/>
+    <fullyQualifiedTypeName name="com.rabbitmq.client.Channel"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
+    <fullyQualifiedTypeName name="java.security.Timestamp"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+</qualifiedTypeNameHistroy>

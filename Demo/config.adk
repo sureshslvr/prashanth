@@ -1,0 +1,7 @@
+#Properties file
+#Wed Mar 16 13:00:23 IST 2022
+Adapter-Name=Dm1
+Adapter-Vendor=SAP
+Adapter-Version=1.0.0
+Enable-Maven=true
+Adapter-ID=Dm1
